@@ -1,7 +1,7 @@
 {
   "name": "cbsoftypinko",
   "version": "1.0.0",
-  "description": "ContentBox 3 Default Theme",
+  "description": "Responsive - Softy Pinko Content Box Theme",
   "main": "Gruntfile.js",
   "private": "true",
   "devDependencies": {
