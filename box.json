@@ -1,40 +1,34 @@
 {
-    "name":"Responsive - Softy Pinko Content Box Theme",
-    "version":"1.0",
-    "author":"Lucid Outsourcing Solutions",
-    "location":"https://github.com/LucidSolutions/cbsoftypinko/archive/master.zip",
-    "homepage":"https://github.com/LucidSolutions/cbsoftypinko/",
-    "documentation":"",
-    "repository":{
-        "type":"git",
-        "URL":"https://github.com/LucidSolutions/cbsoftypinko/"
+    "name": "Responsive - Softy Pinko Content Box Theme",
+    "version": "1.0",
+    "author": "Lucid Outsourcing Solutions",
+    "location": "https://github.com/LucidSolutions/cbsoftypinko/archive/master.zip",
+    "homepage": "https://github.com/LucidSolutions/cbsoftypinko/",
+    "documentation": "",
+    "repository": {
+        "type": "git",
+        "URL": "https://github.com/LucidSolutions/cbsoftypinko/"
     },
-    "bugs":"https://github.com/LucidSolutions/cbsoftypinko/issues",
-    "slug":"cbsoftypinko",
-    "shortDescription":"Responsive - Softy Pinko Content Box Theme",
-    "description":"Responsive - Softy Pinko Content Box Theme",
-    "instructions":"",
-    "changelog":"",
-    "type":"contentbox-themes",
-    "license":[
-        {
-            "type":"Apache2",
-            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
-        }
+    "bugs": "https://github.com/LucidSolutions/cbsoftypinko/issues",
+    "slug": "cbsoftypinko",
+    "shortDescription": "Responsive - Softy Pinko Content Box Theme",
+    "description": "Responsive - Softy Pinko Content Box Theme",
+    "instructions": "",
+    "changelog": "",
+    "type": "contentbox-themes",
+    "license": [{
+        "type": "Apache2",
+        "URL": "http://www.apache.org/licenses/LICENSE-2.0"
+    }],
+    "contributors": [
+        "Lucid Solutions <info@lucidsolutions.in>"
     ],
-    "contributors":[
-        "Lucid Solutions <info@lucidsolutions.in>",
-    ],
-    "dependencies":{
-    },
-    "devDependencies":{ 
-    },
-    "installPaths":{
-    },
-    "scripts":{
-    },
-    "ignore":[
-         "**/.*",
+    "dependencies": {},
+    "devDependencies": {},
+    "installPaths": {},
+    "scripts": {},
+    "ignore": [
+        "**/.*",
         "build.xml",
         "tests"
     ]
