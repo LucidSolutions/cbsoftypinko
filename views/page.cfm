@@ -10,10 +10,10 @@
 		                <h2 class="section-title mb-0">Home</h2>
 		            </div>
 		        </div>
-		        <cfif prc.page.getExcerpt() NEQ "">
+		        <cfif prc.page.hasExcerpt()>
 		            <div class="offset-lg-3 col-lg-6 col-md-12">
 					    <div class="center-text">
-					        <p>#prc.page.getExcerpt()#</p>
+					        <p>#prc.page.renderExcerpt()#</p>
 					    </div>
 					</div>
 	            </cfif>
@@ -29,10 +29,10 @@
 		                <h2 class="section-title mb-0">#prc.page.getTitle()#</h2>
 		            </div>
 		        </div>
-		        <cfif prc.page.getExcerpt() NEQ "">
+		        <cfif prc.page.hasExcerpt()>
 		            <div class="offset-lg-3 col-lg-6 col-md-12">
 					    <div class="center-text">
-					        <p>#prc.page.getExcerpt()#</p>
+					        <p>#prc.page.renderExcerpt()#</p>
 					    </div>
 					</div>
 	            </cfif>

@@ -50,7 +50,7 @@ component extends="contentbox.models.ui.BaseWidget" singleton{
 			default : { arguments.sortOrder = "publishedDate DESC"; }
 		}
 
-		var entryResults 	= entryService.findPublishedEntries( max=arguments.max,
+		var entryResults 	= entryService.findPublishedContent( max=arguments.max,
 											   					 category=arguments.category,
 											   				 	 searchTerm=arguments.searchTerm,
 											   				 	 sortOrder=arguments.sortOrder );
@@ -68,12 +68,12 @@ component extends="contentbox.models.ui.BaseWidget" singleton{
 			// iterate and create
 			for(var x=1; x lte arguments.max; x++){
 				writeOutput('<div class="media align-items-center pb-1 mb-3">');
-				if(entryResults.entries[ x ].getfeaturedImageURL() NEQ ""){
-					writeOutput('<a href="#cb.linkEntry(entryResults.entries[ x ])#" class="d-block pr-2 mr-1"> <img class="img-fluid rounded" width="64" src="#entryResults.entries[ x ].getFeaturedImageURL()#" alt="#entryResults.entries[ x ].getTitle()#"></a>');
+				if(entryResults.content[ x ].getfeaturedImageURL() NEQ ""){
+					writeOutput('<a href="#cb.linkEntry(entryResults.content[ x ])#" class="d-block pr-2 mr-1"> <img class="img-fluid rounded" width="64" src="#entryResults.content[ x ].getFeaturedImageURL()#" alt="#entryResults.content[ x ].getTitle()#"></a>');
 				}
 				writeOutput('<div class="media-body">');
-				writeOutput('<h4 class="mediaHeading mb-1"><a class="font-weight-medium" href="#cb.linkEntry(entryResults.entries[ x ])#">#entryResults.entries[ x ].getTitle()#</a></h4>');
-				writeOutput('<p class="mediaText text-muted mb-0">#entryResults.entries[ x ].getAuthorName()#</p>');
+				writeOutput('<h4 class="mediaHeading mb-1"><a class="font-weight-medium" href="#cb.linkEntry(entryResults.content[ x ])#">#entryResults.content[ x ].getTitle()#</a></h4>');
+				writeOutput('<p class="mediaText text-muted mb-0">#entryResults.content[ x ].getAuthorName()#</p>');
 				writeOutput('</div></div>');
 			}
 		}

@@ -39,4 +39,10 @@
 <!-- injector:css -->
 <link rel="stylesheet" href="#cb.themeRoot()#/includes/css/17c8d16e.theme.min.css">
 <!-- endinjector -->
+
+<cfif len( cb.themeSetting( 'cssStyleOverrides' ) )>
+<style>
+	#cb.themeSetting( 'cssStyleOverrides' )#
+</style>	
+</cfif>
 </cfoutput>

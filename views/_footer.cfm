@@ -14,7 +14,8 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <p class="copyright">Copyright &copy; #YEAR(NOW())# #cb.siteName()# company</p>
+                <p class="copyright">Theme Developed By <a href="https://lucidoutsourcing.com/">Lucid Outsourcing Solutions Pvt. Ltd.</a></p>
+                <p class="copyright">#cb.themeSetting( 'footerBox' )#</p>
             </div>
         </div>
     </div>

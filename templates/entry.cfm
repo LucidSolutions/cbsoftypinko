@@ -7,7 +7,7 @@
 	</cfif>
 		<div class="blog-post-thumb" id="post_#entry.getContentID()#">
 			<cfif entry.getFeaturedImageURL() NEQ "">
-				<div class="img"><img class="img-fluid" src="#entry.getFeaturedImageURL()#" alt="#entry.getTitle()#"></div>
+				<div class="img"><a href="#cb.linkEntry(entry)#" title="#entry.getTitle()#"><img class="img-fluid" src="#entry.getFeaturedImageURL()#" alt="#entry.getTitle()#"></a></div>
 			</cfif>
 		    <div class="blog-content">
 		    	<span class="meta-date"><a href="#cb.linkEntry(entry)#">#entry.getDisplayPublishedDate()#</a></span>

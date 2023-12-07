@@ -20,13 +20,13 @@
 					
 				<!--- Are we filtering by category? --->
 				<cfif len( rc.category )>
-					<h3 class="mb-4">Category Filtering: '#rc.category#'</h3>
+					<h3 class="mb-4">Category Filtering: '#encodeForHTML( rc.category )#'</h3>
 					<a href="#cb.linkBlog()#" class="clearfix main-button mb-4" title="Remove filter and view all entries">Remove Filter</a>
 				</cfif>
 		
 				<!--- Are we searching --->
 				<cfif len( rc.q )>
-					<h3 class="mb-4">Searching by: '#rc.q#'</h3>
+					<h3 class="mb-4">Searching by: '#encodeForHTML( rc.q )#'</h3>
 					<a href="#cb.linkBlog()#" class="clearfix main-button mb-4" title="Clear search and view all entries">Clear Search</a>
 				</cfif>
 		
